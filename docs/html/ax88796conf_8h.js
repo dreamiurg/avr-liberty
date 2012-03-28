@@ -1,0 +1,25 @@
+var ax88796conf_8h =
+[
+    [ "AX88796_ADDRESS_DDR", "ax88796conf_8h.html#ac29f9c9f3316021ef81c68396b084262", null ],
+    [ "AX88796_ADDRESS_MASK", "ax88796conf_8h.html#aad6330f6c76a5e3c0937857cee0acbde", null ],
+    [ "AX88796_ADDRESS_PORT", "ax88796conf_8h.html#a2f6d888022c5127a1dceb486862997d1", null ],
+    [ "AX88796_CONTROL_DDR", "ax88796conf_8h.html#a4e835b65adeb5b81a242fb90217dec41", null ],
+    [ "AX88796_CONTROL_PORT", "ax88796conf_8h.html#a48b2e0ef4a3b40790e561c3c1d63aa26", null ],
+    [ "AX88796_CONTROL_READPIN", "ax88796conf_8h.html#a863bf34ac42e21e4bbdd7941bff70362", null ],
+    [ "AX88796_CONTROL_WRITEPIN", "ax88796conf_8h.html#a1829f662b563b8468e7c4fc74e8d2b72", null ],
+    [ "AX88796_DATA_DDR", "ax88796conf_8h.html#ab961ddf5aba5bfd6d0d7698a967964b2", null ],
+    [ "AX88796_DATA_PIN", "ax88796conf_8h.html#a386bb3647f2ac5395e243d61e9e27be8", null ],
+    [ "AX88796_DATA_PORT", "ax88796conf_8h.html#a0fa2e32ddd2792f01958c5f822978dd8", null ],
+    [ "AX88796_MAC0", "ax88796conf_8h.html#a9dfdf426f0f94fce0571fd734c7188b2", null ],
+    [ "AX88796_MAC1", "ax88796conf_8h.html#a592c551f3827fe7130d76afc4ddd8c23", null ],
+    [ "AX88796_MAC2", "ax88796conf_8h.html#a65ff9f1bf7ed81acfaa5857176b8980e", null ],
+    [ "AX88796_MAC3", "ax88796conf_8h.html#ace140e9663a6a0d9af4f78728b5f7281", null ],
+    [ "AX88796_MAC4", "ax88796conf_8h.html#af44d7f8c3a0123fa103e8518a63bf319", null ],
+    [ "AX88796_MAC5", "ax88796conf_8h.html#a0ea04f957271b5b5e5ebc83e77f4035b", null ],
+    [ "AX88796_RESET_DDR", "ax88796conf_8h.html#a325297e49e104f14be726dcccb288571", null ],
+    [ "AX88796_RESET_PIN", "ax88796conf_8h.html#a419fc39b68b635078bdf1da42823501a", null ],
+    [ "AX88796_RESET_PORT", "ax88796conf_8h.html#aabf19a7625cfe223537bbb9b7201960f", null ],
+    [ "GENERAL_IO", "ax88796conf_8h.html#a3278d42b5acdcf2dc3c34801b9adfec9", null ],
+    [ "MEMORY_MAPPED", "ax88796conf_8h.html#aeeeff4693fbec3e85097a36c811a3a49", null ],
+    [ "NIC_CONNECTION", "ax88796conf_8h.html#a869acd90731b7bb592d0318f6bc95753", null ]
+];

@@ -1,0 +1,25 @@
+var rtl8019conf_8h =
+[
+    [ "GENERAL_IO", "rtl8019conf_8h.html#a3278d42b5acdcf2dc3c34801b9adfec9", null ],
+    [ "MEMORY_MAPPED", "rtl8019conf_8h.html#aeeeff4693fbec3e85097a36c811a3a49", null ],
+    [ "NIC_CONNECTION", "rtl8019conf_8h.html#a869acd90731b7bb592d0318f6bc95753", null ],
+    [ "RTL8019_ADDRESS_DDR", "rtl8019conf_8h.html#a525e850cef59ab6de1d0fe5b7be10684", null ],
+    [ "RTL8019_ADDRESS_MASK", "rtl8019conf_8h.html#a106ab933deb72d601654fb70422d45d0", null ],
+    [ "RTL8019_ADDRESS_PORT", "rtl8019conf_8h.html#aeb5d4656314b3ccd9891702aae8445b8", null ],
+    [ "RTL8019_CONTROL_DDR", "rtl8019conf_8h.html#ab5c9ff21447accf4c18034499ece9e6d", null ],
+    [ "RTL8019_CONTROL_PORT", "rtl8019conf_8h.html#a1338d5d4e6904b6f07c9eea1038b5e33", null ],
+    [ "RTL8019_CONTROL_READPIN", "rtl8019conf_8h.html#aab7a13ac727edb8abf5684621f4cffbe", null ],
+    [ "RTL8019_CONTROL_WRITEPIN", "rtl8019conf_8h.html#a1abfe86dab71e0bdd105c6b4ebbef513", null ],
+    [ "RTL8019_DATA_DDR", "rtl8019conf_8h.html#a5be4f0f0e5c99f5c2823ae476c10fd45", null ],
+    [ "RTL8019_DATA_PIN", "rtl8019conf_8h.html#a218dd58486608ccc49b09f861d341fcc", null ],
+    [ "RTL8019_DATA_PORT", "rtl8019conf_8h.html#a723dd60ebd5966eaf878418fe84648d7", null ],
+    [ "RTL8019_MAC0", "rtl8019conf_8h.html#ad1a3fd06b825c682f232d13aaf89ae3b", null ],
+    [ "RTL8019_MAC1", "rtl8019conf_8h.html#ae36702a648d1905bbd658f906f972fae", null ],
+    [ "RTL8019_MAC2", "rtl8019conf_8h.html#aa277afe6de80d6f089db8f0f22754f25", null ],
+    [ "RTL8019_MAC3", "rtl8019conf_8h.html#abde38d703b4ddf954b306be944fabecd", null ],
+    [ "RTL8019_MAC4", "rtl8019conf_8h.html#a3e074cbb2a64992366a44fa4f7caec2a", null ],
+    [ "RTL8019_MAC5", "rtl8019conf_8h.html#a3fb23af32559b791bc5663e524501929", null ],
+    [ "RTL8019_RESET_DDR", "rtl8019conf_8h.html#a5aa22f6d67d1566678397f185c90a914", null ],
+    [ "RTL8019_RESET_PIN", "rtl8019conf_8h.html#a4cffcbd1e1307c4b1d149c30bcb227e8", null ],
+    [ "RTL8019_RESET_PORT", "rtl8019conf_8h.html#a2daae58dc39543681273180e02aa936c", null ]
+];

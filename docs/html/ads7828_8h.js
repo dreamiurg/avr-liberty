@@ -1,0 +1,27 @@
+var ads7828_8h =
+[
+    [ "ADS7828_CMD_C0", "group__ads7828.html#ga758aa422ed19d4bf72d7cb6b41427701", null ],
+    [ "ADS7828_CMD_C1", "group__ads7828.html#ga13caa3f4730bf007127d19f1f1659284", null ],
+    [ "ADS7828_CMD_C2", "group__ads7828.html#gaf43d7d9de6c940424a2d65b865525353", null ],
+    [ "ADS7828_CMD_CH0", "group__ads7828.html#ga127d5f016a586b48a32a674bface2e80", null ],
+    [ "ADS7828_CMD_CH1", "group__ads7828.html#ga1607285af774dbcdd125ae19d2fb1321", null ],
+    [ "ADS7828_CMD_CH2", "group__ads7828.html#gab1679d20afc75df98e0baf590615db48", null ],
+    [ "ADS7828_CMD_CH3", "group__ads7828.html#gaaefca46e8ab59e5018c573c21b5838e9", null ],
+    [ "ADS7828_CMD_CH4", "group__ads7828.html#ga673e171c77752747d635a1d1c4f69dee", null ],
+    [ "ADS7828_CMD_CH5", "group__ads7828.html#ga186668aca763b8996f0d7737a1b64d91", null ],
+    [ "ADS7828_CMD_CH6", "group__ads7828.html#ga1249f744189a9331c919b964d0cb6733", null ],
+    [ "ADS7828_CMD_CH7", "group__ads7828.html#ga35ab5d425700f616b4dc8398f28d8f3f", null ],
+    [ "ADS7828_CMD_PD0", "group__ads7828.html#gabea66cc82126c75c67eeaedb4bb348c7", null ],
+    [ "ADS7828_CMD_PD1", "group__ads7828.html#gad4006b9c3b5cabd7aa9f5c471c0b7161", null ],
+    [ "ADS7828_CMD_PDMODE0", "group__ads7828.html#ga09b255d3b9c0ac2e5269e69cf2c69f9c", null ],
+    [ "ADS7828_CMD_PDMODE1", "group__ads7828.html#ga6b385e6b2d4b0ff83e016b7eb89bcac5", null ],
+    [ "ADS7828_CMD_PDMODE2", "group__ads7828.html#ga2886f78e79a27b0199a56408d6d93283", null ],
+    [ "ADS7828_CMD_PDMODE3", "group__ads7828.html#ga259a016e3e6de2f4eff99abd69531fcb", null ],
+    [ "ADS7828_CMD_SD", "group__ads7828.html#gafa57cf3d471a26fecd40287701b9869e", null ],
+    [ "ADS7828_I2C_ADDR", "group__ads7828.html#ga17fdf1854c8ce735edcc0574557642a9", null ],
+    [ "ads7828Convert", "group__ads7828.html#gaa252eac1ad937413a39965783f5d634a", null ],
+    [ "ads7828ConvertDiff", "group__ads7828.html#gaba33169939c875fdb7c74decb217607d", null ],
+    [ "ads7828ConvertRaw", "group__ads7828.html#gab31313d435c11cd1025b434a6968b88b", null ],
+    [ "ads7828Init", "group__ads7828.html#gabcee5d88f68f3ecd744e0eb6618408db", null ],
+    [ "ads7828SetReference", "group__ads7828.html#ga947f10d2dcd1ae93f392b82310da0629", null ]
+];
