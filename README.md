@@ -13,11 +13,8 @@ Atmel and other vendors continue release new hardware every day. Also there's so
 ## How to start
 ### Download code
 
-* Clone it using git:
-
-    git clone https://dreamiurg@github.com/dreamiurg/avr-liberty.git
-
-* Alternatively, you may download library archive from TODO:link page
+* Clone it using git: ``git clone https://dreamiurg@github.com/dreamiurg/avr-liberty.git``
+* Or, download library archive from downloads page https://github.com/dreamiurg/avr-liberty/downloads
 
 ### Installation
 * tbd
