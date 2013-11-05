@@ -53,9 +53,9 @@
 // Global variables
 
 // strings
-u08 PROGMEM CmdlinePrompt[] = "cmd>";
-u08 PROGMEM CmdlineNotice[] = "cmdline: ";
-u08 PROGMEM CmdlineCmdNotFound[] = "command not found";
+const u08 PROGMEM CmdlinePrompt[] = "cmd>";
+const u08 PROGMEM CmdlineNotice[] = "cmdline: ";
+const u08 PROGMEM CmdlineCmdNotFound[] = "command not found";
 
 // command list
 // -commands are null-terminated strings
