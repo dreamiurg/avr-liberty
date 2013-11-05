@@ -49,8 +49,10 @@ void extintInit(void)
 
 //! Configure external interrupt trigger
 // NOTE: this function is not complete!!!
+// TODO Not yet work extintConfigure()
 void extintConfigure(u08 interruptNum, u08 configuration)
 {
+	#if !defined(__AVR_ATmega128__)
 	if(interruptNum == EXTINT0)
 	{
 		MCUCR &= ~((1<<ISC01) | (1<<ISC00));
@@ -71,6 +73,7 @@ void extintConfigure(u08 interruptNum, u08 configuration)
 		else
 			cbi(MCUCSR, ISC2);
 	}
+	#endif
 	#endif
 	// need to handle a lot more cases
 	// and differences between processors.
