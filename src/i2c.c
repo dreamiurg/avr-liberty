@@ -361,7 +361,7 @@ void i2cMasterTransferNI(u08 deviceAddr, u08 sendlength, u08* senddata, u08 rece
 */
 
 //! I2C (TWI) interrupt service routine
-SIGNAL(SIG_2WIRE_SERIAL)
+SIGNAL(TWI_vect)
 {
 	// read status bits
 	u08 status = inb(TWSR) & TWSR_STATUS_MASK;
