@@ -79,8 +79,8 @@ void extintTest(void)
 	// enable the interrupts
 	rprintf("Enabling external interrupts\r\n");
 	// (support for this has not yet been added to the library)
-	sbi(GIMSK, INT0);
-	sbi(GIMSK, INT1);
+	sbi(EIMSK, INT0);
+	sbi(EIMSK, INT1);
 
 	// In this loop we will count the number of external interrupts,
 	// and therefore the number of rising edges, that occur in one second.
