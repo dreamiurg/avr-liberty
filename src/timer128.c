@@ -26,10 +26,10 @@
 // Program ROM constants
 // the prescale division values stored in order of timer control register index
 // STOP, CLK, CLK/8, CLK/64, CLK/256, CLK/1024
-unsigned short __attribute__ ((progmem)) TimerPrescaleFactor[] = {0,1,8,64,256,1024};
+const unsigned short __attribute__ ((progmem)) TimerPrescaleFactor[] = {0,1,8,64,256,1024};
 // the prescale division values stored in order of timer control register index
 // STOP, CLK, CLK/8, CLK/32, CLK/64, CLK/128, CLK/256, CLK/1024
-unsigned short __attribute__ ((progmem)) TimerRTCPrescaleFactor[] = {0,1,8,32,64,128,256,1024};
+const unsigned short __attribute__ ((progmem)) TimerRTCPrescaleFactor[] = {0,1,8,32,64,128,256,1024};
 
 // Global variables
 // time registers
