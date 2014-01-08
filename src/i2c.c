@@ -53,11 +53,17 @@ static u08 (*i2cSlaveTransmit)(u08 transmitDataLengthMax, u08* transmitData);
 void i2cInit(void)
 {
 	// set pull-up resistors on I2C bus pins
-	// TODO: should #ifdef these
-	sbi(PORTC, 0);	// i2c SCL on ATmega163,323,16,32,etc
-	sbi(PORTC, 1);	// i2c SDA on ATmega163,323,16,32,etc
+#if (defined (__AVR_ATmega64C1__) || defined (__AVR_ATmega64M1__) ||\
+	defined (__AVR_ATmega128__) || defined (__AVR_ATmega1280__) ||\
+	defined (__AVR_ATmega1281__) || defined (__AVR_ATmega1284P__) ||\
+	defined (__AVR_ATmega128RFA1__))
+
 	sbi(PORTD, 0);	// i2c SCL on ATmega128,64
 	sbi(PORTD, 1);	// i2c SDA on ATmega128,64
+#else
+	sbi(PORTC, 0);	// i2c SCL on ATmega163,323,16,32,etc
+	sbi(PORTC, 1);	// i2c SDA on ATmega163,323,16,32,etc
+#endif
 
 	// clear SlaveReceive and SlaveTransmit handler to null
 	i2cSlaveReceive = 0;
