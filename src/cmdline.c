@@ -344,14 +344,17 @@ void cmdlineProcessInputString(void)
 	// search command list for match with entered command
 	for(cmdIndex=0; cmdIndex<CmdlineNumCommands; cmdIndex++)
 	{
-		if( !strncmp(CmdlineCommandList[cmdIndex], CmdlineBuffer, i) )
+		if ( strlen( CmdlineCommandList[cmdIndex] == i ) )
 		{
-			// user-entered command matched a command in the list (database)
-			// run the corresponding function
-			CmdlineExecFunction = CmdlineFunctionList[cmdIndex];
-			// new prompt will be output after user function runs
-			// and we're done
-			return;
+			if( !strncmp(CmdlineCommandList[cmdIndex], CmdlineBuffer, i) )
+			{
+				// user-entered command matched a command in the list (database)
+				// run the corresponding function
+				CmdlineExecFunction = CmdlineFunctionList[cmdIndex];
+				// new prompt will be output after user function runs
+				// and we're done
+				return;
+			}
 		}
 	}
 
