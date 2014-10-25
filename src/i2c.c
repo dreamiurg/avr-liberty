@@ -107,7 +107,7 @@ void i2cSetBitrate(u16 bitrateKHz)
 void i2cSetLocalDeviceAddr(u08 deviceAddr, u08 genCallEn)
 {
 	// set local device address (used in slave mode only)
-	outb(TWAR, ((deviceAddr&0xFE) | (genCallEn?1:0)) );
+	outb(TWAR, ((deviceAddr<<1) | (genCallEn?1:0)) );
 }
 
 void i2cSetSlaveReceiveHandler(void (*i2cSlaveRx_func)(u08 receiveDataLength, u08* recieveData))
