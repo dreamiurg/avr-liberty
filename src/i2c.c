@@ -62,6 +62,9 @@ void i2cInit(void)
 
 	sbi(PORTD, 0);	// i2c SCL on ATmega128,64
 	sbi(PORTD, 1);	// i2c SDA on ATmega128,64
+#elseif (defined (__AVR_ATmega8__) || defined (__AVR_ATmega8A__))
+  sbi(PORTC, 5); // i2c SCL on ATmega8
+  sbi(PORTC, 4); // i2c SDA on ATmega8
 #else
 	sbi(PORTC, 0);	// i2c SCL on ATmega163,323,16,32,etc
 	sbi(PORTC, 1);	// i2c SDA on ATmega163,323,16,32,etc
