@@ -92,8 +92,12 @@ void cmdlineInit(void)
 
 void cmdlineAddCommand(u08* newCmdString, CmdlineFuncPtrType newCmdFuncPtr)
 {
+	// check if command list is full
+	if(CmdlineNumCommands >= CMDLINE_MAX_COMMANDS)
+		return;
 	// add command string to end of command list
-	strcpy(CmdlineCommandList[CmdlineNumCommands], newCmdString);
+	strncpy(CmdlineCommandList[CmdlineNumCommands], newCmdString, CMDLINE_MAX_CMD_LENGTH-1);
+	CmdlineCommandList[CmdlineNumCommands][CMDLINE_MAX_CMD_LENGTH-1] = 0;
 	// add command function ptr to end of function list
 	CmdlineFunctionList[CmdlineNumCommands] = newCmdFuncPtr;
 	// increment number of registered commands

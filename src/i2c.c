@@ -31,15 +31,15 @@
 
 // I2C state and address variables
 static volatile eI2cStateType I2cState;
-static u08 I2cDeviceAddrRW;
+static volatile u08 I2cDeviceAddrRW;
 // send/transmit buffer (outgoing data)
-static u08 I2cSendData[I2C_SEND_DATA_BUFFER_SIZE];
-static u08 I2cSendDataIndex;
-static u08 I2cSendDataLength;
+static volatile u08 I2cSendData[I2C_SEND_DATA_BUFFER_SIZE];
+static volatile u08 I2cSendDataIndex;
+static volatile u08 I2cSendDataLength;
 // receive buffer (incoming data)
-static u08 I2cReceiveData[I2C_RECEIVE_DATA_BUFFER_SIZE];
-static u08 I2cReceiveDataIndex;
-static u08 I2cReceiveDataLength;
+static volatile u08 I2cReceiveData[I2C_RECEIVE_DATA_BUFFER_SIZE];
+static volatile u08 I2cReceiveDataIndex;
+static volatile u08 I2cReceiveDataLength;
 
 // function pointer to i2c receive routine
 //! I2cSlaveReceive is called when this processor
@@ -497,9 +497,13 @@ SIGNAL(TWI_vect)
 		rprintf("I2C: SR->DATA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
-		// get previously received data byte
-		I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
-		// check receive buffer status
+		// check receive buffer status before writing
+		if(I2cReceiveDataIndex < I2C_RECEIVE_DATA_BUFFER_SIZE)
+		{
+			// get previously received data byte
+			I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
+		}
+		// check if buffer still has room for more
 		if(I2cReceiveDataIndex < I2C_RECEIVE_DATA_BUFFER_SIZE)
 		{
 			// receive data byte and return ACK

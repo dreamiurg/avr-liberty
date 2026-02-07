@@ -114,19 +114,19 @@ void encoderOff(void)
 	// disable encoder interrupts
 	#ifdef ENC0_SIGNAL
 		// disable interrupts
-		sbi(IMSK, INT0);	// ISMK is auto-defined in encoder.h
+		cbi(IMSK, ENC0_INT);	// ISMK is auto-defined in encoder.h
 	#endif
 	#ifdef ENC1_SIGNAL
 		// disable interrupts
-		sbi(IMSK, INT1);	// ISMK is auto-defined in encoder.h
+		cbi(IMSK, ENC1_INT);	// ISMK is auto-defined in encoder.h
 	#endif
 	#ifdef ENC2_SIGNAL
 		// disable interrupts
-		sbi(IMSK, INT2);	// ISMK is auto-defined in encoder.h
+		cbi(IMSK, ENC2_INT);	// ISMK is auto-defined in encoder.h
 	#endif
 	#ifdef ENC3_SIGNAL
 		// disable interrupts
-		sbi(IMSK, INT3);	// ISMK is auto-defined in encoder.h
+		cbi(IMSK, ENC3_INT);	// ISMK is auto-defined in encoder.h
 	#endif
 }
 
